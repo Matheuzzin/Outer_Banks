@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@700&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Vollkorn SC', serif;
+}
+
+body{
+    min-height: 100vh;
+    background-image: radial-gradient(circle at 50% -20.71%, #dcee7a 0, #e2e469 10%, #e7d858 20%, #ebcb47 30%, #eebc35 40%, #f1ac22 50%, #f49b0f 60%, #f78a02 70%, #fa7804 80%, #fd6510 90%, #ff501d 100%);
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    font-size: 2rem;
+}
+
+header ul{
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #000;
+    border-radius: 20px;
+}
+
+header ul li a:hover{
+    background: #fff;
+    color: #d35400;
+}
+
+.img-fluid{
+    height: 1rem;
+}

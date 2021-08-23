@@ -2,17 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@700&display=swap');
 *
 {
-    margin: 0;
+    margin: 2;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Vollkorn SC', serif;
 }
 
 body{
-    min-height: 100vh;
-    background-image: radial-gradient(circle at 50% -20.71%, #dcee7a 0, #e2e469 10%, #e7d858 20%, #ebcb47 30%, #eebc35 40%, #f1ac22 50%, #f49b0f 60%, #f78a02 70%, #fa7804 80%, #fd6510 90%, #ff501d 100%);
+    background-image: radial-gradient(circle at 50% -20.71%, #ffffa8 0, #ffffa7 6.25%, #f0ffa8 12.5%, #ddffa9 18.75%, #c8ffab 25%, #b0ffaf 31.25%, #95ffb3 37.5%, #74ffb9 43.75%, #44ffbf 50%, #00fac7 56.25%, #00f5d1 62.5%, #00f1dc 68.75%, #00ece9 75%, #00e8f6 81.25%, #00e4ff 87.5%, #00e0ff 93.75%, #00dcff 100%);
 }
-header{
+
+.menu{
+    flex-direction: row;
+    height: 6rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -23,34 +25,159 @@ header{
     align-items: center;
 }
 
-header .logo{
-    font-size: 2rem;
+.menu>div {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 50%;
 }
 
-header ul{
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#brand>img {
+    max-height: 5rem;
+    margin-left: 0;
+    margin-right: auto;
 }
 
-header ul li{
-    list-style: none;
-    margin-left: 20px;
+#links {
+    text-align: right;
+    padding-top: 1.5rem;
+    text-decoration: none;
+    color: #000;
+    border-radius: 20px;
 }
 
-header ul li a{
+#links>a:hover{
+    background: #fff;
+    color: #00a8ff;
+}
+
+.link-menu {
+    font-family: 'Vollkorn SC', serif;
     text-decoration: none;
     padding: 6px 15px;
     color: #000;
     border-radius: 20px;
 }
 
-header ul li a:hover{
-    background: #fff;
-    color: #d35400;
+.painel{
+    width: 100%;
+    height: 100vh;
+
 }
 
-.img-fluid{
-    height: 1rem;
+.titulo-painel>center>img{
+    width: auto;
+    height: 17rem;
+    margin: auto;
+    margin-top: 15%;
 }
+
+.titulo-divisao {
+    text-align: center;
+    line-height: 3.5rem;
+    font-family: 'Vollkorn SC', serif;
+    font-size: 1.5rem;
+    color:  #273c75;
+}
+
+.cardes{
+    position: relative;
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+
+}
+.cardes .circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+.cardes .circle::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle at 50% -20.71%, #fff358 0, #fff64c 7.14%, #fff841 14.29%, #fbf939 21.43%, #e0f934 28.57%, #c2f832 35.71%, #a1f535 42.86%, #79f23c 50%, #3fee46 57.14%, #00ea54 64.29%, #00e663 71.43%, #00e375 78.57%, #00df88 85.71%, #00dc9c 92.86%, #00d9b1 100%);
+    clip-path: circle(120px at center); 
+    transition: 0.5s;
+}
+.cardes:hover .circle::before{
+    background:#00a8ff;
+    clip-path: circle(400px at center); 
+}
+.cardes img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 300px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.cardes:hover img{
+    left: 72%;
+    height: 500px;
+}
+.cardes .content{
+    position: absolute;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+
+}
+.cardes:hover .content{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.cardes .content h2{
+    color: darkblue;
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 1em;
+}
+.cardes .content p{
+    color: floralwhite;
+}
+
+@media (max-width: 991px)
+{
+    .cardes{
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start;
+        margin: 10px;
+    }
+    .cardes:hover{
+        height: 600px;
+    }
+    .cardes .content{
+        width: 100%;
+        left: 0;
+        padding: 30px;
+    }
+    .cardes:hover img{
+        top: 70%;
+        left: 50%;
+        height: 300px;
+    }
+}
+@media (max-width: 420px){
+    .cardes .content{
+        padding: 20px;
+    }
+}
+
+

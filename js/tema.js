@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    $('a').addClass('text-white')
+    $('a').addClass('.bg-dark')
 
     $('.btn-light').click(function(light){
         light.preventDefault()
@@ -42,8 +42,8 @@ $(document).ready(function(){
         // Aplicar a classe CSS que eu desejo
 
         $('.jumbotron').addClass('bg-matheus-martins')
-        $('a').removeClass('text-dark')
-        $('a').addClass('text-white')
+        $('a').removeClass('text-white')
+        $('a').addClass('text-dark')
 
     })
 })

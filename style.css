@@ -15,7 +15,7 @@ body{
 .menu{
     flex-direction: row;
     height: 6rem;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -31,7 +31,7 @@ body{
     width: 50%;
 }
 
-#brand>img {
+#brand>a>img {
     max-height: 5rem;
     margin-left: 0;
     margin-right: auto;
@@ -56,6 +56,14 @@ body{
     padding: 6px 15px;
     color: #000;
     border-radius: 20px;
+}
+
+.margin{
+    margin-top: 15rem;
+}
+
+.mb-n4{
+    margin-bottom: -2rem;
 }
 
 .painel{
@@ -173,10 +181,37 @@ body{
         left: 50%;
         height: 300px;
     }
+    .mb-n4{
+        margin-bottom: -30rem;
+    }
 }
 @media (max-width: 420px){
     .cardes .content{
         padding: 20px;
+    }
+    .mb-n4{
+        margin-bottom: -25rem;
+    }   
+}
+
+ /* Dispositivos extra small (telefones em modo retrato, com menos de 576px) */
+@media (max-width: 575.98px) {  
+    .cardes .content{
+        padding: 20px;
+    }
+    .mb-n4{
+        margin-bottom: -25rem;
+    }
+}
+ /* Dispositivos small (telefones em modo paisagem, com menos de 768px) */
+@media (max-width: 767.98px) { 
+    .mb-n4{
+        margin-bottom: -15rem;
+    }
+}
+@media (min-width: 1300px){
+    .mb-n4{
+        margin-bottom: -30rem;
     }
 }
 

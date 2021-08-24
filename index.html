@@ -11,8 +11,85 @@
     </head>
     <body>
 
-        <body>
-            <nav class="menu">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand">Rick and morty</a>
+            <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="my-nav" class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sinópse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Temporadas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Curiosidades</a>
+                    </li>
+
+                    <div class="dropdown text-dark">
+                        <button class="btn btn-trasparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <a><span><i class="fas fa-cogs tema mouse icon-nav"></i> Tema Da Pagína</span></a>
+                        </button>
+                        <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#"><h5 class="btn btn-light mt-2 mouse ">LIGHT</h5></a>
+                          <a class="dropdown-item" href="#"><h5 class="btn btn-primary mt-2 mouse">ORIGINAL</h5></a>
+                          <a class="dropdown-item" href="#"><h5 class="btn btn-dark mt-2 mouse mb-4">DARK</h5></a>
+                        </div>
+                      </div>
+                </ul>
+            </div>
+        </nav>
+        
+
+
+
+
+
+
+
+        <!-- <nav class="navbar navbar-expand-md navbar-dark bg-transparent text-center">
+            <div id="brand">
+            <a href="#" class="navbar-brand text-white"><img src="img/Rick_and_morty_logo.png"></a>
+            </div>
+              <button class="navbar-toggler " data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false " aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon bg-dark"></span>
+              </button>
+              
+              <div id="my-nav" class="collapse navbar-collapse">
+                  <ul class="navbar-nav mr-auto" id="links">
+                      <li class="nav-item">
+                          <a class="nav-link icon-nav" href="#"><i class="fas fa-home mr-1"></i>Home</a>
+                      </li>
+                      <li class="nav-item ">
+                          <a class="nav-link icon-nav" href="Who"><i class="fas fa-users mr-1"></i>Quem Somos?</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link icon-nav" href="contato"><i class="fas fa-phone-alt mr-1"></i>Temporadas</a>
+                      </li>
+                      <li>
+                        <div class="dropdown text-dark">
+                        <button class="btn btn-trasparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <a><span><i class="fas fa-cogs tema mouse icon-nav"></i> Tema Da Pagína</span></a>
+                        </button>
+                        <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#"><h5 class="btn btn-light mt-2 mouse ">LIGHT</h5></a>
+                          <a class="dropdown-item" href="#"><h5 class="btn btn-primary mt-2 mouse">ORIGINAL</h5></a>
+                          <a class="dropdown-item" href="#"><h5 class="btn btn-dark mt-2 mouse mb-4">DARK</h5></a>
+                        </div>
+                      </div>
+                      </li>
+                  </ul>
+              </div> -->
+          <!-- </nav> -->
+
+
+        
+            <!-- <nav class="menu">
                 <div id="brand">
                     <img src="img/Rick_and_morty_logo.png" alt="OBX">
                 </div>
@@ -23,13 +100,18 @@
                     <a class="link-menu" href="#">Novidades</a>
                     <a class="link-menu" href="#">Contato</a>
                 </div>
-            </nav>
-        
-            <div class="painel">
-                <div class="titulo-painel">
-                    <center><img src="img/Rick_and_morty_banner.png" alt="rick_gif"></center>
+            </nav> -->
+        <div class="container">
+            <div class="row justify-content-center mb-n4 mt-2 mt-sm-3">
+                <div class="col-12 col-sm-12 col-md-12 mt-5 mt-sm-3 mt-md-0">
+                    <div class="painel">
+                        <div class="titulo-painel">
+                            <center><img class="img-fluid" src="img/Rick_and_morty_banner.png" alt="rick_gif"></center>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
 
         <div class="content-fluid">
                 <div class="titulo-divisao">
@@ -88,8 +170,29 @@
                 </div>
             </div>
 
+        <!--- Janela Modal -->
+        <div class="modal fade" id="modal-info" role="dialog" aria-labelledby="information" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Matheus Martins</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true" class="color-button">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias commodi eligendi accusantium? Alias necessitatibus dolorum omnis, hic dolores odio dolorem rem vel veritatis laborum nihil ipsum. Consectetur, modi! Rem, numquam!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal" >Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <script src="js/jquery-3.6.0.js"></script>
         <script src="js/bootstrap.js"></script>
+        <script src="js/load-page.js"></script>
+        <script src="js/tema.js"></script>
     </body>
 </html>

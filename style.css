@@ -206,13 +206,11 @@ body{
  /* Dispositivos small (telefones em modo paisagem, com menos de 768px) */
 @media (max-width: 767.98px) { 
     .mb-n4{
-        margin-bottom: -15rem;
+        margin-bottom: -25rem;
     }
 }
-@media (min-width: 1300px){
-    .mb-n4{
-        margin-bottom: -30rem;
-    }
-}
+
+
+
 
 

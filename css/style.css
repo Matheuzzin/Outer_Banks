@@ -1,53 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
 *
 {
     margin: 2;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Vollkorn SC', serif;
+    font-family: 'Work Sans', sans-serif;
 }
 
 body{
     background-image: radial-gradient(circle at 50% -20.71%, #ffffa8 0, #ffffa7 6.25%, #f0ffa8 12.5%, #ddffa9 18.75%, #c8ffab 25%, #b0ffaf 31.25%, #95ffb3 37.5%, #74ffb9 43.75%, #44ffbf 50%, #00fac7 56.25%, #00f5d1 62.5%, #00f1dc 68.75%, #00ece9 75%, #00e8f6 81.25%, #00e4ff 87.5%, #00e0ff 93.75%, #00dcff 100%);
 }
 
-.menu{
-    flex-direction: row;
-    height: 6rem;
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 30px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+.bg-menu-color{
+    background: #7bed9f;
 }
 
-.menu>div {
-    margin: 0.5rem;
-    padding: 0.5rem;
-    width: 50%;
-}
-
-#brand>a>img {
-    max-height: 5rem;
+.img-fluid2{
+    margin-top: -1rem;
+    max-height: 4rem;
+    height: auto;
     margin-left: 0;
     margin-right: auto;
 }
-
-#links {
-    text-align: right;
-    padding-top: 1.5rem;
-    text-decoration: none;
-    color: #000;
-    border-radius: 20px;
-}
-
-#links>a:hover{
-    background: #fff;
-    color: #00a8ff;
+.img-fluid3{
+    margin-top: -5rem;
 }
 
 .link-menu {
@@ -59,7 +38,7 @@ body{
 }
 
 .margin{
-    margin-top: 15rem;
+    margin-top: 10rem;
 }
 
 .mb-n4{
@@ -152,7 +131,6 @@ body{
 }
 .cardes .content h2{
     color: darkblue;
-    text-transform: uppercase;
     font-size: 2rem;
     line-height: 1em;
 }

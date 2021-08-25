@@ -4,114 +4,58 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="shortcut icon" href="img/logo.png" type="img">
-        <title>Outer banks</title>
+        <title>Rick and Morty</title>
     </head>
     <body>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <a class="navbar-brand">Rick and morty</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-menu-color fixed-top">
+            <a class="navbar-brand brand"><img class="img-fluid2" alt="Imagem responsiva" src="img/Rick_and_morty_logo.png"></a>
             <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div id="my-nav" class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link link-menu" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sinópse</a>
+                        <a class="nav-link link-menu" href="sinopse">Sinópse</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Temporadas</a>
+                        <a class="nav-link link-menu" href="temporadas">Temporadas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Curiosidades</a>
+                        <a class="nav-link link-menu" href="curiosidades">Curiosidades</a>
                     </li>
-
-                    <div class="dropdown text-dark">
-                        <button class="btn btn-trasparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <a><span><i class="fas fa-cogs tema mouse icon-nav"></i> Tema Da Pagína</span></a>
-                        </button>
-                        <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#"><h5 class="btn btn-light mt-2 mouse ">LIGHT</h5></a>
-                          <a class="dropdown-item" href="#"><h5 class="btn btn-primary mt-2 mouse">ORIGINAL</h5></a>
-                          <a class="dropdown-item" href="#"><h5 class="btn btn-dark mt-2 mouse mb-4">DARK</h5></a>
-                        </div>
-                      </div>
                 </ul>
             </div>
         </nav>
-        
 
-
-
-
-
-
-
-        <!-- <nav class="navbar navbar-expand-md navbar-dark bg-transparent text-center">
-            <div id="brand">
-            <a href="#" class="navbar-brand text-white"><img src="img/Rick_and_morty_logo.png"></a>
-            </div>
-              <button class="navbar-toggler " data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false " aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon bg-dark"></span>
-              </button>
-              
-              <div id="my-nav" class="collapse navbar-collapse">
-                  <ul class="navbar-nav mr-auto" id="links">
-                      <li class="nav-item">
-                          <a class="nav-link icon-nav" href="#"><i class="fas fa-home mr-1"></i>Home</a>
-                      </li>
-                      <li class="nav-item ">
-                          <a class="nav-link icon-nav" href="Who"><i class="fas fa-users mr-1"></i>Quem Somos?</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link icon-nav" href="contato"><i class="fas fa-phone-alt mr-1"></i>Temporadas</a>
-                      </li>
-                      <li>
-                        <div class="dropdown text-dark">
-                        <button class="btn btn-trasparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <a><span><i class="fas fa-cogs tema mouse icon-nav"></i> Tema Da Pagína</span></a>
-                        </button>
-                        <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#"><h5 class="btn btn-light mt-2 mouse ">LIGHT</h5></a>
-                          <a class="dropdown-item" href="#"><h5 class="btn btn-primary mt-2 mouse">ORIGINAL</h5></a>
-                          <a class="dropdown-item" href="#"><h5 class="btn btn-dark mt-2 mouse mb-4">DARK</h5></a>
-                        </div>
-                      </div>
-                      </li>
-                  </ul>
-              </div> -->
-          <!-- </nav> -->
-
-
-        
-            <!-- <nav class="menu">
-                <div id="brand">
-                    <img src="img/Rick_and_morty_logo.png" alt="OBX">
-                </div>
-    
-                <div id="links">
-                    <a class="link-menu" href="#">Home</a>
-                    <a class="link-menu" href="#">Quem somos?</a>
-                    <a class="link-menu" href="#">Novidades</a>
-                    <a class="link-menu" href="#">Contato</a>
-                </div>
-            </nav> -->
-        <div class="container">
-            <div class="row justify-content-center mb-n4 mt-2 mt-sm-3">
-                <div class="col-12 col-sm-12 col-md-12 mt-5 mt-sm-3 mt-md-0">
-                    <div class="painel">
-                        <div class="titulo-painel">
-                            <center><img class="img-fluid" src="img/Rick_and_morty_banner.png" alt="rick_gif"></center>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- Carousel -->
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <center><div class="carousel-inner">
+              <div class="carousel-item active mt-5">
+                <img class="d-block img-fluid margin " src="img/logo1.png" alt="Primeiro Slide">
+              </div>
+              <div class="carousel-item mt-5">
+                <img class="d-block img-fluid margin" src="img/logo2.png" alt="Segundo Slide">
+              </div>
+              <div class="carousel-item mt-5">
+                <img class="d-block img-fluid margin " src="img/logo3.png" alt="Terceiro Slide">
+              </div>
+            </div></center>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Próximo</span>
+            </a>
+        </div><br><br><br>
 
         <div class="content-fluid">
                 <div class="titulo-divisao">
@@ -124,8 +68,8 @@
                         <div class="cardes">
                             <div class="circle"></div>
                             <div class="content">
-                                <h2>Morty</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum maiores nulla molestiae. Quod id tempore minus labore!</p>
+                                <h2>Morty Smith</h2>
+                                <p>Neto facilmente influenciável e com dificuldades escolares de 14 anos de Rick, parece ser a quem este demonstra maior afeto e expectativa dentro da família, o que faz com que ele sempre acabe por acompanhar Rick em suas aventuras, enquanto descobre o que é o próprio mundo real e reflete sobre a existência das coisas.</p>
                             </div>
                             <img class="img-fluid" src="img/morty.png">
                         </div>
@@ -136,8 +80,9 @@
                         <div class="cardes">
                             <div class="circle"></div>
                                 <div class="content">
-                                    <h2>Rick</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum maiores nulla molestiae. Quod id tempore minus labore!</p>
+                                    <h2>Rick Sanches</h2>
+                                    <p>Um cientista alcoólatra de 70 anos extremamente inteligente que é capaz de construir máquinas e acessórios tecnológicos que o permitem viajar por diversas dimensões e realidades paralelas.
+                                    É pai de Beth, sogro de Jerry e avô de Morty e Summer.</p>
                                 </div>
                             <img class="img-fluid" src="img/rick.png">
                         </div>
@@ -150,7 +95,7 @@
                             <div class="circle"></div>
                             <div class="content">
                                 <h2>Summer</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum maiores nulla molestiae. Quod id tempore minus labore!</p>
+                                <p> Tem 17 anos e é a irmã mais velha de Morty, uma adolescente convencional muitas vezes superficial, que é obcecada por melhorar seu status com seus colegas. Ela ocasionalmente expressa inveja por Morty sempre acompanhar Rick em suas aventuras interdimensionais.</p>
                             </div>
                             <img class="img-fluid" src="img/summer.png">
                         </div>
@@ -162,7 +107,7 @@
                             <div class="circle"></div>
                                 <div class="content">
                                     <h2>Jerry Smith</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum maiores nulla molestiae. Quod id tempore minus labore!</p>
+                                    <p>Pai inseguro de Summer e Morty, 35 anos que desaprova fortemente a influência de Rick sobre seu filho. Ele trabalhou em uma agência de publicidade de baixo nível, até que foi demitido por incompetência e agora está desempregado. Tem uma personalidade infantil e impressionável.</p>
                                 </div>
                             <img class="img-fluid" src="img/Jerry.png">
                         </div>
@@ -173,9 +118,9 @@
         <!--- Janela Modal -->
         <div class="modal fade" id="modal-info" role="dialog" aria-labelledby="information" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
+                <div class="modal-content p-2 shadow-lg p-3 mb-5 bg-white">
                     <div class="modal-header">
-                        <h5 class="modal-title">Matheus Martins</h5>
+                        <h5 class="modal-title">Título da nossa modal</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                             <span aria-hidden="true" class="color-button">&times;</span>
                         </button>
@@ -184,7 +129,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias commodi eligendi accusantium? Alias necessitatibus dolorum omnis, hic dolores odio dolorem rem vel veritatis laborum nihil ipsum. Consectetur, modi! Rem, numquam!</p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal" >Fechar</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
                     </div>
                 </div>
             </div>
@@ -193,6 +138,6 @@
         <script src="js/jquery-3.6.0.js"></script>
         <script src="js/bootstrap.js"></script>
         <script src="js/load-page.js"></script>
-        <script src="js/tema.js"></script>
+        <script src="js/carousel.js"></script>
     </body>
 </html>

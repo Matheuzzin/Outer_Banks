@@ -188,6 +188,18 @@ body{
     }
 }
 
+.footer {
+    padding: 1rem 0;
+    color: #576574;
+    text-align: center;
+    background-color: #7bed9f;
+    border-top: .06rem solid #95a5a6;
+}
+
+.mdi{
+    font-size: 2rem;
+}
+
 
 
 

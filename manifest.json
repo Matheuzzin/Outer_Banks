@@ -1,10 +1,10 @@
 {
-  "name": "PWA",
-  "short_name": "PWA",
+  "name": "Rick_and_Morty",
+  "short_name": "RAM",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#fff",
-  "description": "APP PWA",
+  "description": "APP Rick_and_Morty",
   "icons": [{
     "src": "./img/ram48.png",
     "sizes": "48x48",
